@@ -1,0 +1,14 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "name": "Wiki Mintlify Template",
+  "navigation": [
+    {
+      "group": "Getting started",
+      "pages": ["introduction"]
+    },
+    {
+      "group": "Wiki pages",
+      "pages": ["Alice_Chen", "Bob_Martinez", "SPARQL_Demo"]
+    }
+  ]
+}

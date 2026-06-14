@@ -1,0 +1,17 @@
+---
+title: Introduction
+description: Publish a Wiki CLI vault with Mintlify or Holocron.
+---
+
+# Wiki Mintlify template
+
+Edit semantic markdown in `wiki/`, validate with `wiki check`, sync to `docs/` for Mintlify deploy.
+
+```bash
+pip install wazootech-wiki
+wiki check --strict
+bash scripts/sync-docs.sh
+npx mintlify dev
+```
+
+Registry: [Wiki CLI templates](https://github.com/wazootech/wiki/blob/main/docs/wiki/Wiki_CLI.md#ecosystem-templates).
