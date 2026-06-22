@@ -1,6 +1,7 @@
 {
-  "$schema": "https://mintlify.com/docs.json",
-  "name": "Wiki Mintlify Template",
+  "$schema": "https://holocron.so/docs.json",
+  "name": "Wiki Docs Template",
+  "colors": { "primary": "#6366f1" },
   "navigation": [
     {
       "group": "Getting started",

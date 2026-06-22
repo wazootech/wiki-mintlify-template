@@ -7,10 +7,10 @@ graph:
   content_predicate: schema:articleBody
   context:
     schema: https://schema.org/
-    wiki: https://wazootech.github.io/wiki-mintlify-template/wiki/
+    wiki: https://holocron.so/wiki/
 
 link:
-  style: markdown
+  style: standard
 
 lint:
   broken_links: warning
