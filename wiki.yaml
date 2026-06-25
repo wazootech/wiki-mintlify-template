@@ -1,7 +1,7 @@
 wiki:
   inputs:
     - wiki
-  filename_pattern: "[A-Za-z0-9_()-]+\\.md"
+  filename_pattern: "[A-Za-z0-9_()-]+\\.mdx?"
 
 graph:
   content_predicate: schema:articleBody

@@ -15,12 +15,8 @@
   "navigation": {
     "pages": [
       {
-        "group": "Getting started",
-        "pages": ["index", "quickstart"]
-      },
-      {
-        "group": "Wiki pages",
-        "pages": ["wiki/Alice_Chen", "wiki/Bob_Martinez", "wiki/SPARQL_Demo"]
+        "group": "Pages",
+        "pages": ["wiki/Ethan_Davidson", "wiki/Person_Shape"]
       }
     ]
   },
