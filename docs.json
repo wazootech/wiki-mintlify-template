@@ -20,7 +20,7 @@
       },
       {
         "group": "Wiki pages",
-        "pages": ["Alice_Chen", "Bob_Martinez", "SPARQL_Demo"]
+        "pages": ["wiki/Alice_Chen", "wiki/Bob_Martinez", "wiki/SPARQL_Demo"]
       }
     ]
   },

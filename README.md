@@ -11,7 +11,6 @@ Registry: [Wiki CLI templates](https://github.com/wazootech/wiki/blob/main/docs/
 ```bash
 pip install wazootech-wiki
 wiki check --strict
-npm run sync
 npm run dev
 ```
 
@@ -21,8 +20,8 @@ npm run dev
 | ---- | ---- |
 | `wiki/` | Semantic vault (Wiki CLI source of truth) |
 | `wiki.yaml` | Wiki CLI config |
-| `scripts/sync-docs.sh` | Strip wiki frontmatter → `*.mdx` for Mintlify |
-| `*.mdx` | Mintlify pages (generated from `wiki/` + static pages) |
+| `*.mdx` | Static Mintlify pages (index, quickstart) |
+| `wiki/*.md` | Wiki CLI vault — validated with SHACL shapes, read directly by Mintlify |
 | `docs.json` | Mintlify navigation and theme config |
 
 ## Scripts
@@ -31,15 +30,13 @@ npm run dev
 | ------- | ----------- |
 | `npm run dev` | Start local Mintlify preview |
 | `npm run validate` | Validate Mintlify build |
-| `npm run sync` | Sync wiki source → `.mdx` pages |
 | `npm run export` | Static export to `dist/` |
 
 ## Workflow
 
 1. Author in `wiki/` with typed frontmatter and Markdown links.
 2. Run `wiki check --strict` (and `wiki lint --strict` in CI).
-3. Run `npm run sync` to regenerate `.mdx` pages.
-4. Preview locally with `npm run dev`, then push.
+3. Preview locally with `npm run dev`, then push.
 
 ## Deploy
 
@@ -52,7 +49,7 @@ Two options depending on whether you want full Mintlify features or a free stati
 3. Mintlify auto-detects `docs.json` and the `.mdx` pages — no extra config needed.
 4. Set your custom domain under **Settings → Domain** in the Mintlify dashboard.
 
-On every push to `main`, CI validates your wiki and syncs pages. Mintlify redeploys automatically.
+On every push to `main`, CI validates your wiki. Mintlify redeploys automatically.
 
 ### Option B: Vercel Static Export (free, limited)
 
@@ -71,7 +68,7 @@ On subsequent pushes, Vercel auto-deploys via Git integration.
 
 ## CI
 
-GitHub Actions runs `wiki check --strict`, `wiki lint --strict`, and `npm run sync` on every push.
+GitHub Actions runs `wiki check --strict` and `wiki lint --strict` on every push.
 
 ## Related
 

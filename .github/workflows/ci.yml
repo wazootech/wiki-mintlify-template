@@ -17,5 +17,4 @@ jobs:
       - run: pip install wazootech-wiki
       - run: wiki -c wiki.yaml check --strict
       - run: wiki -c wiki.yaml lint --strict
-      - run: bash scripts/sync-docs.sh
-      - run: test -f index.mdx
+      - run: test -f wiki/Alice_Chen.md

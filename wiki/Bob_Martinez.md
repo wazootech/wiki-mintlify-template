@@ -2,7 +2,7 @@
 type: Person
 givenName: Bob
 familyName: Martinez
-headline: Bob Martinez
+title: Bob Martinez
 description: Second sample person for multi-result SPARQL queries.
 ---
 

@@ -2,7 +2,7 @@
 type: Person
 givenName: Alice
 familyName: Chen
-headline: Alice Chen
+title: Alice Chen
 description: Sample person page for SPARQL SELECT demos.
 ---
 

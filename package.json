@@ -4,8 +4,7 @@
   "scripts": {
     "dev": "mint dev",
     "validate": "mint validate",
-    "export": "mint export --output dist",
-    "sync": "bash scripts/sync-docs.sh"
+    "export": "mint export --output dist"
   },
   "devDependencies": {
     "mintlify": "^4.2.639"

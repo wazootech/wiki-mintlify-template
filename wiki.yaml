@@ -8,6 +8,7 @@ graph:
   context:
     schema: https://schema.org/
     wiki: https://mintlify.com/wiki/
+    title: schema:headline
 
 link:
   style: standard
