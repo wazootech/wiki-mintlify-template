@@ -1,0 +1,18 @@
+wiki:
+  inputs:
+    - wiki
+  filename_pattern: "[A-Za-z0-9_()-]+\\.mdx?"
+
+graph:
+  content_predicate: schema:articleBody
+  context:
+    schema: https://schema.org/
+    wiki: https://mintlify.com/wiki/
+    title: schema:headline
+
+link:
+  style: markdown
+
+lint:
+  broken_links: warning
+  filename_pattern: warning
