@@ -2,7 +2,7 @@
 
 Publish a [Wiki CLI](https://github.com/wazootech/wiki)-compatible vault with [Mintlify](https://mintlify.com).
 
-Edit semantic markdown in `wiki/`; validate with `wiki check`; sync to `.mdx` for docs-site deploy.
+Edit semantic markdown in `wiki/`; validate with `wiki check`; publish with Mintlify or Vercel.
 
 Registry: [Wiki CLI templates](https://github.com/wazootech/wiki/blob/main/docs/wiki/Wiki_CLI.md#ecosystem-templates).
 
@@ -18,10 +18,8 @@ npm run dev
 
 | Path | Role |
 | ---- | ---- |
-| `wiki/` | Semantic vault (Wiki CLI source of truth) |
+| `wiki/` | Wiki CLI vault — validated with SHACL shapes, read directly by Mintlify |
 | `wiki.yaml` | Wiki CLI config |
-| `*.mdx` | Static Mintlify pages (index, quickstart) |
-| `wiki/*.md` | Wiki CLI vault — validated with SHACL shapes, read directly by Mintlify |
 | `docs.json` | Mintlify navigation and theme config |
 
 ## Scripts
@@ -30,7 +28,7 @@ npm run dev
 | ------- | ----------- |
 | `npm run dev` | Start local Mintlify preview |
 | `npm run validate` | Validate Mintlify build |
-| `npm run export` | Static export to `dist/` |
+| `npm run export` | Static export to `export.zip` |
 
 ## Workflow
 
@@ -64,7 +62,7 @@ Deploys the static export (`mint export`) to Vercel without Mintlify hosting.
 
 On subsequent pushes, Vercel auto-deploys via Git integration.
 
-**Preview locally:** `npm run export && npx serve dist`
+**Preview locally:** `npm run export && unzip -o export.zip -d dist && npx serve dist`
 
 ## CI
 

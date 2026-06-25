@@ -4,7 +4,7 @@
   "scripts": {
     "dev": "mint dev",
     "validate": "mint validate",
-    "export": "mint export --output dist"
+    "export": "mint export"
   },
   "devDependencies": {
     "mintlify": "^4.2.639"
