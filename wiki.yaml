@@ -11,7 +11,7 @@ graph:
     title: schema:headline
 
 link:
-  style: standard
+  style: markdown
 
 lint:
   broken_links: warning

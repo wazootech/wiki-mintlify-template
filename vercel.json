@@ -1,4 +1,5 @@
 {
+  "buildCommand": "npx mint export --output dist",
   "outputDirectory": "dist",
   "cleanUrls": true,
   "trailingSlash": true
