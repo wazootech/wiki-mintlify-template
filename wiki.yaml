@@ -7,7 +7,7 @@ graph:
   content_predicate: schema:articleBody
   context:
     schema: https://schema.org/
-    wiki: https://holocron.so/wiki/
+    wiki: https://mintlify.com/wiki/
 
 link:
   style: standard

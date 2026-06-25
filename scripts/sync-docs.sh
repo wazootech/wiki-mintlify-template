@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
-mkdir -p "${ROOT}/docs"
 for file in "${ROOT}"/wiki/*.md; do
   base="$(basename "${file}" .md)"
   title=$(sed -n 's/^headline: //p' "${file}")
@@ -14,5 +13,5 @@ for file in "${ROOT}"/wiki/*.md; do
     echo '---'
     echo ''
     awk 'BEGIN{fm=0} /^---\r?$/ {fm++; next} fm>=2 {print}' "${file}"
-  } > "${ROOT}/docs/${base}.mdx"
+  } > "${ROOT}/${base}.mdx"
 done

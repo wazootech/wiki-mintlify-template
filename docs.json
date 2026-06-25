@@ -1,15 +1,43 @@
 {
-  "$schema": "https://holocron.so/docs.json",
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
   "name": "Wiki Docs Template",
-  "colors": { "primary": "#6366f1" },
-  "navigation": [
-    {
-      "group": "Getting started",
-      "pages": ["introduction"]
-    },
-    {
-      "group": "Wiki pages",
-      "pages": ["Alice_Chen", "Bob_Martinez", "SPARQL_Demo"]
+  "colors": {
+    "primary": "#6366f1",
+    "light": "#818cf8",
+    "dark": "#4f46e5"
+  },
+  "favicon": "/favicon.svg",
+  "logo": {
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg"
+  },
+  "navigation": {
+    "pages": [
+      {
+        "group": "Getting started",
+        "pages": ["index", "quickstart"]
+      },
+      {
+        "group": "Wiki pages",
+        "pages": ["Alice_Chen", "Bob_Martinez", "SPARQL_Demo"]
+      }
+    ]
+  },
+  "navbar": {
+    "links": [],
+    "primary": {
+      "type": "button",
+      "label": "Mintlify Dashboard",
+      "href": "https://app.mintlify.com"
     }
-  ]
+  },
+  "footer": {
+    "socials": {
+      "github": "https://github.com/wazootech/wiki"
+    }
+  },
+  "background": {
+    "style": "gradient"
+  }
 }

@@ -1,0 +1,44 @@
+---
+title: "Quickstart"
+description: "Get your Wiki CLI vault published with Mintlify."
+---
+
+## Before you begin
+
+Install the [Wiki CLI](https://github.com/wazootech/wiki):
+
+```bash
+pip install wazootech-wiki
+```
+
+## Validate your wiki
+
+```bash
+wiki check --strict
+wiki lint --strict
+```
+
+## Sync to Mintlify pages
+
+```bash
+npm run sync
+```
+
+This strips wiki frontmatter and outputs `.mdx` pages for Mintlify.
+
+## Preview locally
+
+```bash
+npm run dev
+```
+
+Open `http://localhost:3000` to see your docs.
+
+## Deploy to Mintlify
+
+1. Go to [mintlify.com](https://mintlify.com) and sign in.
+2. Click **Import from GitHub** and select this repository.
+3. Mintlify auto-detects `docs.json` and the `.mdx` pages.
+4. Set your custom domain under **Settings → Domain**.
+
+On push to `main`, CI validates and syncs. Mintlify redeploys automatically.
