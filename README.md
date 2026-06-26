@@ -72,3 +72,11 @@ GitHub Actions runs `wiki check --strict` and `wiki lint --strict` on every push
 
 - [#31](https://github.com/wazootech/wiki/issues/31)
 - [Wiki Configuration](https://github.com/wazootech/wiki/blob/main/docs/wiki/Wiki_Configuration.md)
+
+## Alternative hosting
+
+Beyond Mintlify Hosting and Vercel, this wiki can be deployed to any static host:
+
+- **GitHub Pages:** Enable Pages (Source: GitHub Actions), then push &mdash; the wiki build runs via CI
+- **Netlify:** Import the repo, build command \pip install wazootech-wiki && wiki build --output-dir _site --site-base-url /\, publish directory \_site\
+- **Cloudflare Pages:** Same build command and output directory as Netlify
