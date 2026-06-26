@@ -9,10 +9,3 @@ graph:
     schema: https://schema.org/
     wiki: https://mintlify.com/wiki/
     title: schema:headline
-
-link:
-  style: markdown
-
-lint:
-  broken_links: warning
-  filename_pattern: warning
